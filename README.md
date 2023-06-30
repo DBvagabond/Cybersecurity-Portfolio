@@ -10,9 +10,9 @@ During my Google Cybersecurity course, I was trained to conduct security audit i
 - **Analyzing audit scope, goals, and risk assessment**
   - I meticulously examine the established audit scope, goals, and risk assessment findings to ensure alignment and accuracy. This step enables me to fine-tune the audit process and tailor it to the unique needs and challenges of the organization.
 - **Conducting controls assessment**
-  - I evaluate the organization's existing security controls, including technical, administrative, and physical measures. This assessment allows me to identify any gaps or weaknesses in the security infrastructure and recommend appropriate improvements.
+  - I evaluate the organization's existing security controls, including technical, administrative, and physical measures. This assessment allows me to identify any gaps or weaknesses in the security infrastructure and recommend appropriate improvements. [Example Controls assessment](assets/Controls-assessment.pdf)
 - **Conducting Compliance cheklist**
-  - I meticulously review the organization's adherence to relevant industry standards, legal regulations, and best practices. This assessment ensures that the organization is meeting the required compliance criteria and helps identify any compliance gaps that need to be addressed.
+  - I meticulously review the organization's adherence to relevant industry standards, legal regulations, and best practices. This assessment ensures that the organization is meeting the required compliance criteria and helps identify any compliance gaps that need to be addressed. [Example Compliance checklist](assets/Compliance-checklist.pdf)
 - **Analyzing audit results**
   - I analyze the findings from the controls assessment, risk assessment, and compliance checklist to generate a comprehensive view of the organization's cybersecurity posture. This analysis allows me to identify potential vulnerabilities, threats, and areas of improvement.
 - **Communicating results and recommendations**
