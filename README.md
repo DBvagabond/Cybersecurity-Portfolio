@@ -5,9 +5,12 @@ As a cybersecurity enthusiast majoring in informatics and business, I bring a di
 During my Google Cybersecurity course, I was trained to conduct security audit in an organization. Such audit may vary in specific companies, but standard way of doing it consists of:
 - Reviewing audit scope and goals
   - I carefully analyze the organization's objectives, systems, and assets to define the scope and goals of the audit. This initial step allows me to establish a clear understanding of the specific areas that need to be assessed. 
-- creating company risk assesment 
+- creating company risk assesment
+  - I conduct a comprehensive analysis of the organization's risk landscape, identifying potential threats, vulnerabilities, and their associated impact. This assessment enables me to prioritize areas for further examination and focus on mitigating the most critical risks.  
 - Analyzing audit scope, goals, and risk assessment
+ -  I meticulously examine the established audit scope, goals, and risk assessment findings to ensure alignment and accuracy. This step enables me to fine-tune the audit process and tailor it to the unique needs and challenges of the organization.
 - Conducting controls assessment
+ -  I evaluate the organization's existing security controls, including technical, administrative, and physical measures. This assessment allows me to identify any gaps or weaknesses in the security infrastructure and recommend appropriate improvements.
 - Conducting Compliance cheklist
 - Analyzing audit results
 - Communicating results and recommendations
