@@ -16,4 +16,4 @@ During my Google Cybersecurity course, I was trained to conduct security audit i
 - **Analyzing audit results**
   - I analyze the findings from the controls assessment, risk assessment, and compliance checklist to generate a comprehensive view of the organization's cybersecurity posture. This analysis allows me to identify potential vulnerabilities, threats, and areas of improvement.
 - **Communicating results and recommendations**
-  - I prepare detailed reports summarizing the audit findings, including identified risks, vulnerabilities, and recommended remediation measures. I ensure clear and concise communication of these results to stakeholders, including executive management, IT teams, and relevant personnel. 
+  - I prepare detailed reports summarizing the audit findings, including identified risks, vulnerabilities, and recommended remediation measures. I ensure clear and concise communication of these results to stakeholders, including executive management, IT teams, and relevant personnel. [Example Stakeholder memorandum](assets/Stakeholder-memorandum-exemplar.pdf)
