@@ -18,6 +18,9 @@ During my Google Cybersecurity course, I was trained to conduct security audit i
 - **Communicating results and recommendations**
   - I prepare detailed reports summarizing the audit findings, including identified risks, vulnerabilities, and recommended remediation measures. I ensure clear and concise communication of these results to stakeholders, including executive management, IT teams, and relevant personnel. [Example Stakeholder memorandum](assets/Stakeholder-memorandum-exemplar.pdf)
 
+## Conducting Network Traffic Analysis
+During my Google Cybersecurity course, I obtained knowledge necessary to conduct Network Traffic Analysis followed by Incydent Report
+[Example Incydent Report](assets/network-traffic-analysis.pdf)
 (playbooks)
-(network)
+(network?)
 (ddos defence)
