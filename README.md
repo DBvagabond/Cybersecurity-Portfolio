@@ -22,6 +22,7 @@ During my Google Cybersecurity course, I was trained to conduct security audit i
 During my Google Cybersecurity course, I obtained knowledge necessary to conduct Network Traffic Analysis followed by Incydent Report
 [Example Incydent Report](assets/network-traffic-analysis.pdf)
 
+I've learnt to analyze and deduct information from network and webpage data logs using tools like Wireshark or tcpdump to identify attacks. (add more)
 OS Hardening
 Network Hardening
 (playbooks)
