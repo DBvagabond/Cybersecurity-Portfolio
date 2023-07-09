@@ -28,3 +28,4 @@ Network Hardening (ways to harden)
 (playbooks)
 (network?)
 (ddos defence)
+Linux + SQL
