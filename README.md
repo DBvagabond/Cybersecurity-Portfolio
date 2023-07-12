@@ -29,3 +29,4 @@ Network Hardening (ways to harden)
 (network?)
 (ddos defence)
 Linux + SQL
+knowledge of Linux and its tools
