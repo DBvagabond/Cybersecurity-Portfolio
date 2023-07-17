@@ -30,4 +30,4 @@ Network Hardening (ways to harden)
 (ddos defence)
 Linux + SQL
 knowledge of Linux and its tools
-Learnt to use Linux commands useful in cybersecurity
+Learnt to use Linux commands useful in cybersecurity, managing directories, files and setting premissions for users
