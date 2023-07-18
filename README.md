@@ -31,3 +31,4 @@ Network Hardening (ways to harden)
 Linux + SQL
 knowledge of Linux and its tools
 Learnt to use Linux commands useful in cybersecurity, managing directories, files and setting premissions for users for dirs and files
+Learnt to use SQL in ways useful in cybersecurity field
