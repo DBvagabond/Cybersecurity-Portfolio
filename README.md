@@ -22,7 +22,8 @@ During my Google Cybersecurity course, I was trained to conduct security audit i
 During my Google Cybersecurity course, I obtained knowledge necessary to conduct Network Traffic Analysis followed by Incydent Report
 [Example Incydent Report](assets/network-traffic-analysis.pdf)
 
-I've learnt to analyze and deduct information from network and webpage data logs using tools like Wireshark or tcpdump to identify attacks. (add more)
+I possess expertise in analyzing network and webpage data logs using tools like Wireshark and tcpdump. This proficiency allows me to identify potential attacks, such as DDoS, MitM, SQL injection, and XSS vulnerabilities, through the examination of traffic patterns and HTTP requests and responses.
+
 OS Hardening (ways to harden)
 Network Hardening (ways to harden)
 (playbooks)
@@ -30,5 +31,13 @@ Network Hardening (ways to harden)
 (ddos defence)
 Linux + SQL
 knowledge of Linux and its tools
-Learnt to use Linux commands useful in cybersecurity, managing directories, files and setting premissions for users for dirs and files
-Learnt to use SQL in ways useful in cybersecurity field
+
+## Linux
+I have acquired proficiency in utilizing various Linux commands that are essential for effectively managing directories and files, as well as setting permissions for users on these resources. Through my experience, I have learned to efficiently navigate and manipulate the Linux file system. I am adept at creating, deleting, and renaming directories, as well as moving and copying files with precision.
+An integral aspect of my skill set involves setting precise permissions on directories and files to ensure data security and privacy. I employ the Linux `chmod` and `chown` commands to assign appropriate read, write, and execute permissions to users, groups, and others, thus granting controlled access as required.
+By leveraging these Linux commands, I enable robust access control mechanisms, safeguarding sensitive data from unauthorized access, modification, or deletion. My proficiency in Linux-based directory and file management serves as a valuable asset in bolstering the security posture of digital assets within an organization's infrastructure. During my Google Cybersecurity Certification I had a chance to practice this skillset as shown in this example exercise: [Example Linux exercise](assets/premissions_Linux.pdf)
+
+## SQL
+I have acquired essential skills in utilizing SQL to bolster security measures and effectively analyze data in the cybersecurity field. With expertise in SQL filtering and joins, I proficiently extract valuable insights from databases, aiding in the identification and mitigation of potential security threats.
+Through my experience, I have harnessed the power of SQL filtering to query and retrieve specific data sets that are pertinent to cybersecurity investigations. By crafting precise queries, I efficiently filter through vast datasets, enabling me to focus on critical information crucial for incident response and threat analysis.
+Moreover, my knowledge of SQL joins allows me to combine data from multiple tables, thereby enhancing the correlation and contextual understanding of cybersecurity events. The ability to perform inner, outer, and self-joins enables me to consolidate and leverage disparate data sources, facilitating a comprehensive view of potential security incidents and attack patterns.
