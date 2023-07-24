@@ -24,12 +24,10 @@ During my Google Cybersecurity course, I obtained knowledge necessary to conduct
 
 I possess expertise in analyzing network and webpage data logs using tools like Wireshark and tcpdump. This proficiency allows me to identify potential attacks, such as DDoS, MitM, SQL injection, and XSS vulnerabilities, through the examination of traffic patterns and HTTP requests and responses.
 
-OS Hardening (ways to harden)
-Network Hardening (ways to harden)
+I have acquired knowledge and expertise in implementing robust measures to harden networks and OS. Through my experience and comprehensive understanding of cybersecurity best practices, I have honed the skills required to fortify digital infrastructures and enhance their resilience against potential threats and vulnerabilities.
 (playbooks)
 (network?)
 (ddos defence)
-Linux + SQL
 knowledge of Linux and its tools
 
 ## Linux
