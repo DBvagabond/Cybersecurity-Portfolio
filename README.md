@@ -40,4 +40,7 @@ I have acquired essential skills in utilizing SQL to bolster security measures a
 Through my experience, I have harnessed the power of SQL filtering to query and retrieve specific data sets that are pertinent to cybersecurity investigations. By crafting precise queries, I efficiently filter through vast datasets, enabling me to focus on critical information crucial for incident response and threat analysis.
 Moreover, my knowledge of SQL joins allows me to combine data from multiple tables, thereby enhancing the correlation and contextual understanding of cybersecurity events. The ability to perform inner, outer, and self-joins enables me to consolidate and leverage disparate data sources, facilitating a comprehensive view of potential security incidents and attack patterns.
 
-Learnt to automate cybersecurity task using Python programming language.
+Learnt to automate cybersecurity task using Python programming language. Practical exapmples of what i learnt during my course: 
+- Opening and reading files
+- Parsing files
+- Debugging code
