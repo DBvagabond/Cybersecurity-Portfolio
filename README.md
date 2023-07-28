@@ -2,7 +2,7 @@
 As a cybersecurity enthusiast majoring in informatics and business, I bring a diverse background in logistics and a keen interest in cybersecurity. With industry experience as a logistics specialist at a major Korean automotive company, I developed strong organizational and problem-solving abilities. I stay updated on emerging threats and industry best practices, ensuring effective security strategies aligned with organizational goals. My passion for running instills discipline and perseverance, while my web development skills provide practical experience in implementing secure practices. Driven by integrity and confidentiality, I am dedicated to making a meaningful impact on organizations' security and resilience. I am committed to fortifying companies' security posture and mitigating cyber risks.
 # My abilities
 ## Conducting security audits
-During my Google Cybersecurity course, I was trained to conduct security audit in an organization. Such audit may vary in specific companies, but standard way of doing it consists of:
+During my Google Cybersecurity course (badge aquired 27.07.2023), I was trained to conduct security audit in an organization. Such audit may vary in specific companies, but standard way of doing it consists of:
 - **Reviewing audit scope and goals**
   - I carefully analyze the organization's objectives, systems, and assets to define the scope and goals of the audit. This initial step allows me to establish a clear understanding of the specific areas that need to be assessed. 
 - **creating company risk assesment**
@@ -40,7 +40,5 @@ I have acquired essential skills in utilizing SQL to bolster security measures a
 Through my experience, I have harnessed the power of SQL filtering to query and retrieve specific data sets that are pertinent to cybersecurity investigations. By crafting precise queries, I efficiently filter through vast datasets, enabling me to focus on critical information crucial for incident response and threat analysis.
 Moreover, my knowledge of SQL joins allows me to combine data from multiple tables, thereby enhancing the correlation and contextual understanding of cybersecurity events. The ability to perform inner, outer, and self-joins enables me to consolidate and leverage disparate data sources, facilitating a comprehensive view of potential security incidents and attack patterns.
 
-Learnt to automate cybersecurity task using Python programming language. Practical exapmples of what i learnt during my course: 
-- Opening and reading files
-- Parsing files
-- Debugging code
+## Python
+I have acquired valuable skills in automating cybersecurity tasks using the Python programming language. Through practical examples during my course, I gained proficiency in opening and reading files, parsing data from various formats, and effectively debugging code to ensure smooth automation processes. These skills empower me to streamline cybersecurity workflows and enhance efficiency in handling data-intensive tasks within the cybersecurity domain.
