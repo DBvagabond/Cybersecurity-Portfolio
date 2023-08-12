@@ -27,10 +27,6 @@ During my Google Cybersecurity course, I obtained knowledge necessary to conduct
 I possess expertise in analyzing network and webpage data logs using tools like Wireshark and tcpdump. This proficiency allows me to identify potential attacks, such as DDoS, MitM, SQL injection, and XSS vulnerabilities, through the examination of traffic patterns and HTTP requests and responses.
 
 I have acquired knowledge and expertise in implementing robust measures to harden networks and OS. Through my experience and comprehensive understanding of cybersecurity best practices, I have honed the skills required to fortify digital infrastructures and enhance their resilience against potential threats and vulnerabilities.
-(playbooks)
-(network?)
-(ddos defence)
-knowledge of Linux and its tools
 
 ## Linux
 I have acquired proficiency in utilizing various Linux commands that are essential for effectively managing directories and files, as well as setting permissions for users on these resources. Through my experience, I have learned to efficiently navigate and manipulate the Linux file system. I am adept at creating, deleting, and renaming directories, as well as moving and copying files with precision.
