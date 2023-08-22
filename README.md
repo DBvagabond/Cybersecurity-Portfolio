@@ -3,8 +3,8 @@ Welcome to my Cybersecurity Skillset Showcase repository! This repository is des
 
 I have successfully completed the following cybersecurity certifications, equipping me with a solid foundation and practical knowledge:
 
-- [Google Cybersecurity](https://github.com/DBvagabond/Cybersecurity-Portfolio/blob/main/Google%20Cybersecurity.md)
-- Microsoft Windows Defender and Firewall for Beginners
+- [Google Cybersecurity](https://github.com/DBvagabond/Cybersecurity-Portfolio/blob/main/CERTIFICATES/Google%20Cybersecurity.md)
+- [Microsoft Windows Defender and Firewall for Beginners](https://github.com/DBvagabond/Cybersecurity-Portfolio/blob/main/CERTIFICATES/Microsoft%20Windows%20Defender%20and%20Firewall.md)
 
 Contact
 Feel free to reach out to me at [bogdanski.dominik1@email.com] to discuss collaboration opportunities or to learn more about my cybersecurity skillset.
