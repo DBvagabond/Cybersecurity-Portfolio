@@ -2,8 +2,6 @@
 
 In the "Introduction to Active Directory" module on Hack The Box, I gained a comprehensive understanding of Active Directory (AD) concepts and acquired practical skills related to managing AD environments. This module covered a range of topics:
 
-## Key Topics Covered:
-
 ### 1. Examining the History of Active Directory
 
 I delved into the historical evolution of Active Directory, understanding its significance in modern network infrastructure.
