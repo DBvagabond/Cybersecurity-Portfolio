@@ -1,4 +1,4 @@
-**Intro to Network Traffic Analysis**
+# Intro to Network Traffic Analysis
 This repository contains some of the projects and exercises that I completed during the Intro to Network Traffic Analysis course from HTB Academy. The course taught me how to capture, analyze, and interpret network traffic using tools such as Wireshark and Tcpdump. I learned how to:
 - Identify different types of network protocols and their characteristics
 - Filter and extract relevant information from network packets
