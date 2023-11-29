@@ -4,9 +4,13 @@ Welcome to my Skillset Showcase repository! This repository is designed to demon
 # Certifications
 I have successfully completed the following certifications, equipping me with a solid foundation and practical knowledge:
 - [Google Cybersecurity]()
-- [Microsoft Windows Defender and Firewall for Beginners]()
+- [Intermediate Python (Datacamp)]()
+- [Intermediate SQL (Datacamp)]()
 - [Intro to Network Traffic Analysis (HTB Academy)]()
 - [Introduction to Active Directory (HTB Academy)]()
+- [Introduction to Python (Datacamp)]()
+- [Microsoft Windows Defender and Firewall for Beginners]()
+- [SQL for Data Analysts (Santander Scholarship)]()
 - [Windows Fundamentals (HTB Academy)]()
 
 ## In this reposiroty you can find projects I've created, such as:

@@ -21,9 +21,7 @@ During my Google Cybersecurity course (badge aquired 27.07.2023), I was trained 
   - I prepare detailed reports summarizing the audit findings, including identified risks, vulnerabilities, and recommended remediation measures. I ensure clear and concise communication of these results to stakeholders, including executive management, IT teams, and relevant personnel. [Example Stakeholder memorandum](assets/Stakeholder-memorandum-exemplar.pdf)
 
 ## Conducting Network Traffic Analysis
-During my Google Cybersecurity course, I obtained knowledge necessary to conduct Network Traffic Analysis followed by Incydent Report
-[Example Incydent Report](assets/network-traffic-analysis.pdf)
-
+During my Google Cybersecurity course, I obtained knowledge necessary to conduct Network Traffic Analysis followed by Incydent Report.
 I possess expertise in analyzing network and webpage data logs using tools like Wireshark and tcpdump. This proficiency allows me to identify potential attacks, such as DDoS, MitM, SQL injection, and XSS vulnerabilities, through the examination of traffic patterns and HTTP requests and responses.
 
 I have acquired knowledge and expertise in implementing robust measures to harden networks and OS. Through my experience and comprehensive understanding of cybersecurity best practices, I have honed the skills required to fortify digital infrastructures and enhance their resilience against potential threats and vulnerabilities.
