@@ -11,7 +11,6 @@ I have successfully completed the following certifications, equipping me with a 
 - [Introduction to Python (Datacamp)](https://github.com/DBvagabond/Personal-Portfolio/blob/main/CERTIFICATES/Introduction%20to%20Python%20(Datacamp).md)
 - [Microsoft Windows Defender and Firewall for Beginners](https://github.com/DBvagabond/Personal-Portfolio/blob/main/CERTIFICATES/Microsoft%20Windows%20Defender%20and%20Firewall.md)
 - [SQL for Data Analysts (Santander Scholarship)](https://github.com/DBvagabond/Personal-Portfolio/blob/main/CERTIFICATES/SQL%20for%20Data%20Analysts%20(Santander%20Scholarship).md)
-- [Windows Fundamentals (HTB Academy)]()
 
 ## In this reposiroty you can find projects I've created, such as:
 
