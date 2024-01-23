@@ -1,4 +1,4 @@
-# Amazing Weather Display
+# Weather Display
 
 ## Overview
 
@@ -28,33 +28,33 @@ To set up the Amazing Weather Display, you will need the following components:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/amazing-weather-display.git
+   git clone https://github.com/DBvagabond/Personal-Portfolio/blob/b712e9f837e6a3aebdd7fe153af4c0fd800b9c78/ESP8266%20D1%20mini%20V3/Weather%20App/Arduino%20IDE%20weather
    
 2. **Install Arduino Libraries:**
-- Open Arduino IDE.
-- Go to Sketch -> Include Library -> Manage Libraries...
-- Search for each library mentioned above and install them.
+   - Open Arduino IDE.
+   - Go to Sketch -> Include Library -> Manage Libraries...
+   - Search for each library mentioned above and install them.
 
 3. **Configure Credentials:**
-- Open the Arduino sketch (amazing_weather.ino).
-- Replace the placeholder values in the code with your WiFi SSID, password, and OpenWeatherMap API key.
+   - Open the Arduino sketch (amazing_weather.ino).
+   - Replace the placeholder values in the code with your WiFi SSID, password, and OpenWeatherMap API key.
 
 3. **Upload the Code:**
-- Connect your ESP8266 board to your computer.
-- Select the correct board and port in Arduino IDE.
-- Click the "Upload" button to flash the code to your board.
+   - Connect your ESP8266 board to your computer.
+   - Select the correct board and port in Arduino IDE.
+   - Click the "Upload" button to flash the code to your board.
 
 4. **Connect OLED Display:**
-- Connect the SSD1306 OLED display to the I2C pins on your ESP8266 board.
+   - Connect the SSD1306 OLED display to the I2C pins on your ESP8266 board.
 
 5. **Power On:**
-- Power on your ESP8266 board.
+   - Power on your ESP8266 board.
 
 6. **View Weather Information:**
-- The OLED display should now show weather information for your specified location.
+   - The OLED display should now show weather information for your specified location.
 
 ## Acknowledgments
-- Special thanks to OpenWeatherMap for providing the weather data API.
-- Thanks to the Arduino community for the libraries and support.
+   - Special thanks to OpenWeatherMap for providing the weather data API.
+   - Thanks to the Arduino community for the libraries and support.
 
 Feel free to contribute, report issues, or suggest improvements!
