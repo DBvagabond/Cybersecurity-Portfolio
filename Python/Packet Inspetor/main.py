@@ -35,5 +35,12 @@ def packet_callback(packet, protocol):
     # Log packet details to file
     logging.info(packet_info)
 
-protocol = input("Enter protocol to sniff (tcp/udp): ").lower()
-sniff(prn=lambda packet: packet_callback(packet, protocol), count=20)
+# Input validation for protocol selection
+def get_valid_protocol():
+    valid_protocols = ['tcp', 'udp']
+    while True:
+        protocol = input("Enter protocol to sniff (tcp/udp): ").lower()
+        if protocol in valid_protocols:
+            return protocol
+        else:
+            print("Invalid protocol! Please enter either 'tcp' or 'udp'.")
