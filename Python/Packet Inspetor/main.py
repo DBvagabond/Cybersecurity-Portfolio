@@ -14,6 +14,10 @@ def packet_callback(packet, protocol):
     packet_info = None
     table_color = "white"
     
+    # Check if the packet has an IP layer
+    if not packet.haslayer(IP):
+        return  # Ignore packets without IP layer (e.g., ARP packets)
+
     if protocol == "tcp" and packet.haslayer(TCP):
         src_ip = packet[IP].src
         dst_ip = packet[IP].dst
