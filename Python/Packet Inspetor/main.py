@@ -5,8 +5,12 @@ from rich.table import Table
 from rich import box
 from datetime import datetime
 
-# Setup logging
-logging.basicConfig(filename='packets.log', level=logging.INFO, format='%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+# Get timestamp for filenames
+timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
+# Setup logging with timestamped filename
+log_filename = f'packets_{timestamp}.log'
+logging.basicConfig(filename=log_filename, level=logging.INFO, format='%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 console = Console()
 
 # List to store captured packets
@@ -52,9 +56,9 @@ def packet_callback(packet, protocol):
         table.add_column("Source Port")
         table.add_column("Destination Port")
         
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        packet_timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         table.add_row(
-            timestamp,
+            packet_timestamp,
             src_ip, 
             dst_ip, 
             str(src_port) if 'src_port' in locals() else "N/A",
@@ -91,11 +95,12 @@ def get_valid_packet_count():
         except ValueError:
             print("Invalid input! Please enter a valid number.")
 
-# Function to export packets to a .pcap file
-def export_packets_to_pcap(filename="captured_packets.pcap"):
+# Function to export packets to a .pcap file with timestamped filename
+def export_packets_to_pcap():
+    pcap_filename = f'captured_packets_{timestamp}.pcap'
     if captured_packets:
-        wrpcap(filename, captured_packets)
-        print(f"Packets saved to {filename}")
+        wrpcap(pcap_filename, captured_packets)
+        print(f"Packets saved to {pcap_filename}")
     else:
         print("No packets to save.")
 
