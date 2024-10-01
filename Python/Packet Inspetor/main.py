@@ -1,4 +1,4 @@
-from scapy.all import sniff, IP, TCP, UDP, ICMP
+from scapy.all import sniff, IP, TCP, UDP, ICMP, wrpcap
 import logging
 from rich.console import Console
 from rich.table import Table
@@ -8,6 +8,9 @@ from datetime import datetime
 # Setup logging
 logging.basicConfig(filename='packets.log', level=logging.INFO, format='%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 console = Console()
+
+# List to store captured packets
+captured_packets = []
 
 # Packet processing callback
 def packet_callback(packet, protocol):
@@ -62,6 +65,9 @@ def packet_callback(packet, protocol):
 
     # Log packet details to file
     logging.info(packet_info)
+    
+    # Store packet for exporting
+    captured_packets.append(packet)
 
 # Input validation for protocol selection
 def get_valid_protocol():
@@ -85,6 +91,14 @@ def get_valid_packet_count():
         except ValueError:
             print("Invalid input! Please enter a valid number.")
 
+# Function to export packets to a .pcap file
+def export_packets_to_pcap(filename="captured_packets.pcap"):
+    if captured_packets:
+        wrpcap(filename, captured_packets)
+        print(f"Packets saved to {filename}")
+    else:
+        print("No packets to save.")
+
 def main():
     # Get user inputs
     protocol = get_valid_protocol()
@@ -94,8 +108,13 @@ def main():
         # Start sniffing packets
         print(f"Sniffing {packet_count} {protocol.upper()} packets...")
         sniff(prn=lambda packet: packet_callback(packet, protocol), count=packet_count)
+        
+        # Export captured packets to pcap file
+        export_packets_to_pcap()
+    
     except KeyboardInterrupt:
         print("\nSniffing interrupted by user. Exiting...")
+        export_packets_to_pcap()  # Save packets even if interrupted
 
 if __name__ == "__main__":
     main()
