@@ -83,17 +83,20 @@ def get_valid_protocol():
         else:
             print("Invalid protocol! Please enter either 'tcp', 'udp', or 'icmp'.")
 
-# Input validation for packet count
-def get_valid_packet_count():
+# Input validation for packet count or continuous sniffing
+def get_packet_count_or_continuous():
     while True:
+        user_input = input("Enter number of packets to capture or 'c' for continuous sniffing: ").strip()
+        if user_input.lower() == 'c':
+            return None  # Continuous sniffing mode
         try:
-            count = int(input("Enter number of packets to capture: "))
+            count = int(user_input)
             if count > 0:
                 return count
             else:
                 print("Please enter a positive number.")
         except ValueError:
-            print("Invalid input! Please enter a valid number.")
+            print("Invalid input! Please enter a valid number or 'c' for continuous mode.")
 
 # Function to export packets to a .pcap file with timestamped filename
 def export_packets_to_pcap():
@@ -107,12 +110,16 @@ def export_packets_to_pcap():
 def main():
     # Get user inputs
     protocol = get_valid_protocol()
-    packet_count = get_valid_packet_count()
+    packet_count = get_packet_count_or_continuous()  # Either specific count or continuous mode
 
     try:
         # Start sniffing packets
-        print(f"Sniffing {packet_count} {protocol.upper()} packets...")
-        sniff(prn=lambda packet: packet_callback(packet, protocol), count=packet_count)
+        if packet_count is None:
+            print("Sniffing continuously. Press Ctrl+C to stop...")
+            sniff(prn=lambda packet: packet_callback(packet, protocol))  # No count, sniff until interrupted
+        else:
+            print(f"Sniffing {packet_count} {protocol.upper()} packets...")
+            sniff(prn=lambda packet: packet_callback(packet, protocol), count=packet_count)
         
         # Export captured packets to pcap file
         export_packets_to_pcap()
