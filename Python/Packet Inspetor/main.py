@@ -3,7 +3,8 @@ import logging
 from rich.console import Console
 from rich.table import Table
 from rich import box
-from datetime import datetime
+from datetime import datetime, timedelta
+from collections import defaultdict
 
 # Get timestamp for filenames
 timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -16,6 +17,16 @@ console = Console()
 # List to store captured packets
 captured_packets = []
 
+# Store data for suspicious activity detection
+ip_activity = defaultdict(list)  # Track IPs and their port usage
+icmp_count = defaultdict(int)    # Track ICMP packet count per source
+suspicious_ips = set()           # Set of flagged suspicious IPs
+
+# Thresholds for detecting suspicious activity
+PORT_SCAN_THRESHOLD = 10  # Multiple ports accessed within a short period
+ICMP_FLOOD_THRESHOLD = 100  # Number of ICMP requests in a short period
+TRAFFIC_SPIKE_THRESHOLD = 50  # Number of packets from an IP in a short period
+
 # Packet processing callback
 def packet_callback(packet, protocol):
     packet_info = None
@@ -25,25 +36,25 @@ def packet_callback(packet, protocol):
     if not packet.haslayer(IP):
         return  # Ignore packets without IP layer (e.g., ARP packets)
 
+    src_ip = packet[IP].src
+    dst_ip = packet[IP].dst
+    packet_time = datetime.now()
+
     if protocol == "tcp" and packet.haslayer(TCP):
-        src_ip = packet[IP].src
-        dst_ip = packet[IP].dst
         src_port = packet[TCP].sport
         dst_port = packet[TCP].dport
         packet_info = f"TCP Packet: {src_ip}:{src_port} --> {dst_ip}:{dst_port}"
         table_color = "cyan"
+        detect_port_scanning(src_ip, src_port, packet_time)  # Check for port scanning
     elif protocol == "udp" and packet.haslayer(UDP):
-        src_ip = packet[IP].src
-        dst_ip = packet[IP].dst
         src_port = packet[UDP].sport
         dst_port = packet[UDP].dport
         packet_info = f"UDP Packet: {src_ip}:{src_port} --> {dst_ip}:{dst_port}"
         table_color = "green"
     elif protocol == "icmp" and packet.haslayer(ICMP):
-        src_ip = packet[IP].src
-        dst_ip = packet[IP].dst
         packet_info = f"ICMP Packet: {src_ip} --> {dst_ip}"
         table_color = "yellow"
+        detect_icmp_flooding(src_ip)  # Check for ICMP flooding
     else:
         return  # Ignore other protocols
 
@@ -56,7 +67,7 @@ def packet_callback(packet, protocol):
         table.add_column("Source Port")
         table.add_column("Destination Port")
         
-        packet_timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        packet_timestamp = packet_time.strftime('%Y-%m-%d %H:%M:%S')
         table.add_row(
             packet_timestamp,
             src_ip, 
@@ -72,6 +83,25 @@ def packet_callback(packet, protocol):
     
     # Store packet for exporting
     captured_packets.append(packet)
+
+# Detect suspicious port scanning activity
+def detect_port_scanning(ip, port, timestamp):
+    ip_activity[ip].append((port, timestamp))
+    recent_ports = [p for p, t in ip_activity[ip] if timestamp - t < timedelta(seconds=10)]  # Last 10 seconds
+    if len(set(recent_ports)) >= PORT_SCAN_THRESHOLD:
+        log_suspicious_activity(f"Suspicious activity detected: Port scanning from {ip}")
+
+# Detect suspicious ICMP flooding
+def detect_icmp_flooding(ip):
+    icmp_count[ip] += 1
+    if icmp_count[ip] > ICMP_FLOOD_THRESHOLD:
+        log_suspicious_activity(f"Suspicious activity detected: ICMP flood from {ip}")
+
+# Log suspicious activity
+def log_suspicious_activity(message):
+    console.print(f"[bold red]{message}[/bold red]")
+    logging.warning(message)
+    suspicious_ips.add(message)
 
 # Input validation for protocol selection
 def get_valid_protocol():
