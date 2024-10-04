@@ -95,7 +95,7 @@ def detect_port_scanning(ip, port, timestamp):
 def detect_icmp_flooding(ip):
     icmp_count[ip] += 1
     if icmp_count[ip] > ICMP_FLOOD_THRESHOLD:
-        log_suspicious_activity(f"Suspicious activity detected: ICMP flood from {ip}")
+        log_suspicious_activity(f"Suspicious activity detected: ICMP flood coming from {ip}")
 
 # Log suspicious activity
 def log_suspicious_activity(message):
